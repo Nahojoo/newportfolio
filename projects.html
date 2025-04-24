@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nahojoo.github.io/portfolio/" />
+    <meta property="og:title" content="포트폴리오" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <link rel="shortcut icon" href="/portfolio/src/assets/icons/favicon.ico" />
+    <link rel="stylesheet" href="https://use.typekit.net/zds2lut.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/projects.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- HEADER -->
+      <header class="header">
+        <div class="header__inner">
+          <h1 class="logo">
+            <a href="#">LOGO</a>
+          </h1>
+          <div class="gnb-wrapper">
+            <nav class="gnb">
+              <ul class="gnb-depth1-wrap">
+                <li class="gnb-depth1">
+                  <a href="#">방문안내</a>
+                </li>
+                <li class="gnb-depth1">
+                  <a href="#">전시</a>
+                  <ul class="gnb-depth2-wrap">
+                    <li class="gnb-depth2">
+                      <a href="#">현재전시</a>
+                    </li>
+                    <li class="gnb-depth2">
+                      <a href="#">예정전시</a>
+                    </li>
+                    <li class="gnb-depth2">
+                      <a href="#">과거전시</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="gnb-depth1">
+                  <a href="#">소장품</a>
+                  <ul class="gnb-depth2-wrap">
+                    <li class="gnb-depth2">
+                      <a href="#">고미술</a>
+                    </li>
+                    <li class="gnb-depth2">
+                      <a href="#">현대미술</a>
+                    </li>
+                    <li class="gnb-depth2">
+                      <a href="#">보존</a>
+                    </li>
+                    <li class="gnb-depth2">
+                      <a href="#">수어해설</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="gnb-depth1">
+                  <a href="#">배움·연구</a>
+                  <ul class="gnb-depth2-wrap">
+                    <li class="gnb-depth2">
+                      <a href="#">프로그램</a>
+                    </li>
+                    <li class="gnb-depth2">
+                      <a href="#">아카이브</a>
+                    </li>
+                    <li class="gnb-depth2">
+                      <a href="#">출판</a>
+                    </li>
+                    <li class="gnb-depth2">
+                      <a href="#">영상·자료</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="gnb-depth1">
+                  <a href="#">멤버십</a>
+                  <ul class="gnb-depth2-wrap">
+                    <li class="gnb-depth2">
+                      <a href="#">가입과안내</a>
+                    </li>
+                    <li class="gnb-depth2">
+                      <a href="#">프로그램과 혜택</a>
+                    </li>
+                    <li class="gnb-depth2">
+                      <a href="#">뉴스레터</a>
+                    </li>
+                    <li class="gnb-depth2">
+                      <a href="#">멤버십 공지</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-right">
+            <a class="btn" href="#">버튼</a>
+            <a class="btn" href="#"
+              >ENG
+              <span class="icon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#57575c"
+                    d="M12.075 15.475q-.725.025-1.387-.237t-1.163-.763t-.763-1.125t-.262-1.325q0-.25.025-.487t.1-.463q.1-.3-.012-.6t-.388-.425q-.3-.125-.587 0t-.388.425q-.125.375-.187.75T7 12q0 1 .388 1.913t1.087 1.612q.675.7 1.588 1.075t1.887.4l-.425.425q-.225.225-.225.525t.225.525t.525.225t.525-.225l1.6-1.6q.3-.3.3-.7t-.3-.7l-1.6-1.6q-.225-.225-.525-.225t-.525.225t-.225.525t.225.525zM11.9 8.5q.725 0 1.4.263t1.175.762t.763 1.125t.262 1.325q0 .25-.025.487t-.1.463q-.1.3.013.612t.387.438q.3.125.588 0t.387-.425q.125-.375.188-.763T17 12q0-1-.363-1.912T15.55 8.45q-.7-.7-1.612-1.062t-1.888-.363l.45-.45q.2-.225.2-.525t-.225-.525t-.525-.225t-.525.225l-1.6 1.6q-.3.3-.3.7t.3.7l1.6 1.6q.225.225.525.225t.525-.225t.225-.525t-.225-.525zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"
+                  /></svg
+              ></span>
+            </a>
+            <div class="">
+              <a class="btn" href="#">로그인</a>
+              <a class="btn" href="#">회원가입</a>
+            </div>
+          </div>
+          <div class="header-bg">
+            안녕하세요 <br />
+            웹사이트를 방문해주셔서 감사합니다.
+          </div>
+        </div>
+      </header>
+      <!-- MAIN -->
+      <main id="container">
+        <section class="intro-section">
+          <div class="intro-section__inner">
+            <div class="intro-section__box">
+              <h3>전시회 이름</h3>
+              <a href="#" class="btn lg">상세보기</a>
+              <ul>
+                <li>장소</li>
+                <li>2025.00.00</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <div class="contents-wrap">
+          <section class="section-layout exhibition">
+            <div class="section-layout__inner">
+              <h2 class="section-layout__tit">전시</h2>
+              <a href="#" class="section-layout__btn btn lg"
+                ><span>전시더보기</span></a
+              >
+              <ul class="section-layout__cards">
+                <li class="card">
+                  <a class="card__link" href="#">
+                    <div class="card__img img">
+                      <img
+                        src="./src/assets/imgs/project-img01.jpg"
+                        alt="사진1"
+                      />
+                    </div>
+                    <div class="card__info">
+                      <h3 class="card__title">프로그램</h3>
+                      <ul class="card__caption">
+                        <li>장소</li>
+                        <li>2025.00.00 ~ 2025.00.00</li>
+                      </ul>
+                    </div>
+                  </a>
+                </li>
+                <li class="card">
+                  <a class="card__link" href="#">
+                    <div class="card__img img">
+                      <img
+                        src="./src/assets/imgs/project-img01.jpg"
+                        alt="사진1"
+                      />
+                    </div>
+                    <div class="card__info">
+                      <h3 class="card__title">프로그램</h3>
+                      <ul class="card__caption">
+                        <li>장소</li>
+                        <li>2025.00.00 ~ 2025.00.00</li>
+                      </ul>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="section-layout collection">
+            <div class="section-layout__inner">
+              <h2 class="section-layout__tit">소장품</h2>
+              <a href="#" class="section-layout__btn btn"
+                ><span>소장품더보기</span></a
+              >
+              <div class="swiper collection-swiper">
+                <div class="swiper-wrapper section-layout__cards">
+                  <div class="swiper-slide card">
+                    <a class="card__link" href="#">
+                      <div class="card__img img">
+                        <img
+                          src="./src/assets/imgs/project-img06.jpg"
+                          alt="사진1"
+                        />
+                      </div>
+                      <div class="card__info">
+                        <h3 class="card__title">소장품 명</h3>
+                        <ul class="card__caption">
+                          <li>작가 | 년도</li>
+                          <li>재료</li>
+                        </ul>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide card">
+                    <a class="card__link" href="#">
+                      <div class="card__img img">
+                        <img
+                          src="./src/assets/imgs/project-img07.jpg"
+                          alt="사진1"
+                        />
+                      </div>
+                      <div class="card__info">
+                        <h3 class="card__title">소장품 명</h3>
+                        <ul class="card__caption">
+                          <li>작가 | 년도</li>
+                          <li>재료</li>
+                        </ul>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide card">
+                    <a class="card__link" href="#">
+                      <div class="card__img img">
+                        <img
+                          src="./src/assets/imgs/project-img11.jpg"
+                          alt="사진1"
+                        />
+                      </div>
+                      <div class="card__info">
+                        <h3 class="card__title">소장품 명</h3>
+                        <ul class="card__caption">
+                          <li>작가 | 년도</li>
+                          <li>재료</li>
+                        </ul>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide card">
+                    <a class="card__link" href="#">
+                      <div class="card__img img">
+                        <img
+                          src="./src/assets/imgs/project-img12.jpg"
+                          alt="사진1"
+                        />
+                      </div>
+                      <div class="card__info">
+                        <h3 class="card__title">소장품 명</h3>
+                        <ul class="card__caption">
+                          <li>작가 | 년도</li>
+                          <li>재료</li>
+                        </ul>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next projects-btns"></div>
+              <div class="swiper-button-prev projects-btns"></div>
+            </div>
+          </section>
+          <section class="section-layout data">
+            <div class="section-layout__inner">
+              <h2 class="section-layout__tit">영상·자료</h2>
+              <a href="#" class="section-layout__btn btn lg"
+                ><span>영상·자료더보기</span></a
+              >
+              <ul class="section-layout__cards">
+                <li class="card">
+                  <a class="card__link" href="#">
+                    <div class="card__img img">
+                      <img
+                        src="./src/assets/imgs/project-img02.jpg"
+                        alt="사진1"
+                      />
+                    </div>
+                    <div class="card__info">
+                      <h3 class="card__title">프로그램</h3>
+                      <ul class="card__desc">
+                        <li>전시</li>
+                        <li>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Nesciunt voluptatem iste consequuntur omnis,
+                          neque ut provident placeat tempora aliquid quasi nobis
+                          magni ducimus reiciendis, odit molestias reprehenderit
+                          animi autem impedit.
+                        </li>
+                      </ul>
+                    </div>
+                  </a>
+                </li>
+                <li class="card">
+                  <a class="card__link" href="#">
+                    <div class="card__img img">
+                      <img
+                        src="./src/assets/imgs/project-img02.jpg"
+                        alt="사진1"
+                      />
+                    </div>
+                    <div class="card__info">
+                      <h3 class="card__title">프로그램</h3>
+                      <ul class="card__desc">
+                        <li>전시</li>
+                        <li>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Nesciunt voluptatem iste consequuntur omnis,
+                          neque ut provident placeat tempora aliquid quasi nobis
+                          magni ducimus reiciendis, odit molestias reprehenderit
+                          animi autem impedit.
+                        </li>
+                      </ul>
+                    </div>
+                  </a>
+                </li>
+                <li class="card">
+                  <a class="card__link" href="#">
+                    <div class="card__img img">
+                      <img
+                        src="./src/assets/imgs/project-img02.jpg"
+                        alt="사진1"
+                      />
+                    </div>
+                    <div class="card__info">
+                      <h3 class="card__title">프로그램</h3>
+                      <ul class="card__desc">
+                        <li>전시</li>
+                        <li>
+                          Lorem ipsum dolor, sit amet consectetur adipisici
+                        </li>
+                      </ul>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="section-layout notice">
+            <div class="section-layout__inner">
+              <h2 class="section-layout__tit">공지</h2>
+              <a href="#" class="section-layout__btn btn lg"
+                ><span>공지 더보기</span></a
+              >
+              <ul class="notice-list">
+                <li>
+                  <a href="#">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <span>2025.04.07</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p>임시 휴관 안내</p>
+                    <span>2025.04.07</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p>임시 휴관 안내</p>
+                    <span>2025.04.07</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p>임시 휴관 안내</p>
+                    <span>2025.04.07</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p>임시 휴관 안내</p>
+                    <span>2025.04.07</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        <!-- 옵션세팅 버튼-->
+        <button
+          class="main-fixed-btn setting-btn"
+          type="button"
+          id="settingToggleBtn"
+          aria-label="사용자설정열기"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <g fill="none" fill-rule="evenodd">
+              <path
+                d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
+              />
+              <path
+                fill="currentColor"
+                d="M18 4a1 1 0 1 0-2 0v1H4a1 1 0 0 0 0 2h12v1a1 1 0 1 0 2 0V7h2a1 1 0 1 0 0-2h-2zM4 11a1 1 0 1 0 0 2h2v1a1 1 0 1 0 2 0v-1h12a1 1 0 1 0 0-2H8v-1a1 1 0 0 0-2 0v1zm-1 7a1 1 0 0 1 1-1h12v-1a1 1 0 1 1 2 0v1h2a1 1 0 1 1 0 2h-2v1a1 1 0 1 1-2 0v-1H4a1 1 0 0 1-1-1"
+              />
+            </g>
+          </svg>
+          <span class="screen-hidden">사용자설정열기</span>
+        </button>
+        <!-- 사이트맵 버튼 -->
+        <button
+          class="main-fixed-btn menu-btn"
+          type="button"
+          aria-label="사이트맵열기"
+        >
+          <span></span>
+        </button>
+      </main>
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="footer-inner">
+          <div class="footer-top flex-between">
+            <div class="footer-top__info">
+              <h2 class="footer-top__title">제목</h2>
+              <p class="footer-top__desc">우편주소 및 상세주소</p>
+              <p class="footer-top__desc">대표전화 000-000-000</p>
+            </div>
+            <ul class="footer-top__btns">
+              <li>
+                <a href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"
+                    />
+                  </svg>
+                  <span class="screen-hidden">인스타그램</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="m10 15l5.19-3L10 9zm11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73"
+                    />
+                  </svg>
+                  <span class="screen-hidden">유튜브</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M12 2.04c-5.5 0-10 4.49-10 10.02c0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89c1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02"
+                    />
+                  </svg>
+                  <span class="screen-hidden">페이스북</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-bottom flex-between">
+            <div class="footer-bottom__left">
+              <div class="footer-bottom__links">
+                <a class="line" href="#">소개</a>
+                <a class="line" href="#">공지</a>
+                <a class="line" href="#">보도자료</a>
+                <a href="#">법인회원</a>
+              </div>
+              <div class="footer-bottom__info">
+                <button class="line gray300" type="button">이메일 문의</button>
+                <button class="policy" type="button">개인정보처리방침</button>
+              </div>
+            </div>
+            <div class="copyright">
+              해당 페이지는 퍼블리싱 연습을 위해 클론 코딩했습니다.
+            </div>
+            <div class="footer-bottom__right">
+              <ul class="footer-bottom__imgs">
+                <li class="footer-bottom__img">
+                  <button>
+                    <img
+                      src="./src/assets/imgs/ISO 14001.svg"
+                      alt=""
+                      height="40"
+                    />
+                  </button>
+                </li>
+                <li class="footer-bottom__img">
+                  <button>
+                    <img
+                      src="./src/assets/imgs/ISO 45001.svg"
+                      alt=""
+                      height="40"
+                    />
+                  </button>
+                </li>
+                <a href="#">
+                  <img src="./src/assets/imgs/ISO_WEB.png" alt="" height="40" />
+                </a>
+              </ul>
+              <div class="footer-bottom__site">
+                <select
+                  name="familysite"
+                  id="familysite"
+                  class="mdi--keyboard-arrow-down"
+                >
+                  <option selected disabled>패밀리 사이트</option>
+                  <option value="패밀리사이트1">패밀리 사이트1</option>
+                  <option value="패밀리사이트2">패밀리 사이트2</option>
+                </select>
+                <button class="btn lg" type="button">이동</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- 오버레이-->
+      <div class="ui-setting-overlay" aria-hidden="true">
+        <div class="ui-setting">
+          <div class="ui-setting__msg">안녕하세요</div>
+          <p class="ui-setting__desc">
+            아래 옵션을 조정하여 오늘 나에게 꼭 맞는 탐색 환경을 만들어보세요.
+          </p>
+          <ul class="setting-list">
+            <li class="setting-item">
+              <strong>배경 색상</strong>
+              <ul class="option-btns">
+                <li>
+                  <button aria-label="" type="button" class="black">
+                    <span class="screen-hidden">검정</span>
+                  </button>
+                </li>
+                <li>
+                  <button aria-label="" type="button" class="dark-gray">
+                    <span class="screen-hidden">진한회색</span>
+                  </button>
+                </li>
+                <li>
+                  <button aria-label="" type="button" class="gray">
+                    <span class="screen-hidden">옅은회색</span>
+                  </button>
+                </li>
+                <li>
+                  <button aria-label="" type="button" class="beige">
+                    <span class="screen-hidden">베이지</span>
+                  </button>
+                </li>
+                <li>
+                  <button aria-label="" type="button" class="white active">
+                    <span class="screen-hidden">흰색</span>
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li class="setting-item">
+              <strong>글자 크기</strong>
+              <ul class="option-btns">
+                <li>
+                  <button aria-label="" type="button" class="font">
+                    <span class="screen-hidden">작게</span>
+                  </button>
+                </li>
+                <li>
+                  <button aria-label="" type="button" class="active font md">
+                    <span class="screen-hidden">보통</span>
+                  </button>
+                </li>
+                <li>
+                  <button aria-label="" type="button" class="font lg">
+                    <span class="screen-hidden">크게</span>
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li class="setting-item">
+              <strong>추천 옵션</strong>
+              <ul class="option-btns">
+                <li>
+                  <button
+                    aria-label=""
+                    type="button"
+                    class="recommend active default"
+                  >
+                    <span>기본</span>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    aria-label=""
+                    type="button"
+                    class="recommend dark-mode"
+                  >
+                    <span>다크모드</span>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    aria-label=""
+                    type="button"
+                    class="recommend eco-mode"
+                  >
+                    <span>에코모드</span>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    aria-label=""
+                    type="button"
+                    class="recommend contrast-mode"
+                  >
+                    <span>고대비모드</span>
+                  </button>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="ui-setting__keywords">
+            <p>
+              최근 방문자가 가장 많이 검색한 키워드입니다. 클릭하면 해당
+              검색어로 이동합니다.
+            </p>
+            <ul class="keyword-list">
+              <li class="keyword-item"><a href="#">키워드1</a></li>
+              <li class="keyword-item"><a href="#">키워드2</a></li>
+              <li class="keyword-item"><a href="#">키워드3</a></li>
+              <li class="keyword-item"><a href="#">키워드4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="sitemap-overlay">
+        <div class="sitemap">
+          <header class="sitemap-header">
+            <div class="sitemap-header__inner">
+              <h2 class="logo">
+                <a href="#">LOGO</a>
+              </h2>
+              <div class="header-right">
+                <a class="btn" href="#">버튼</a>
+                <a class="btn" href="#"
+                  >ENG
+                  <span class="icon"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="#57575c"
+                        d="M12.075 15.475q-.725.025-1.387-.237t-1.163-.763t-.763-1.125t-.262-1.325q0-.25.025-.487t.1-.463q.1-.3-.012-.6t-.388-.425q-.3-.125-.587 0t-.388.425q-.125.375-.187.75T7 12q0 1 .388 1.913t1.087 1.612q.675.7 1.588 1.075t1.887.4l-.425.425q-.225.225-.225.525t.225.525t.525.225t.525-.225l1.6-1.6q.3-.3.3-.7t-.3-.7l-1.6-1.6q-.225-.225-.525-.225t-.525.225t-.225.525t.225.525zM11.9 8.5q.725 0 1.4.263t1.175.762t.763 1.125t.262 1.325q0 .25-.025.487t-.1.463q-.1.3.013.612t.387.438q.3.125.588 0t.387-.425q.125-.375.188-.763T17 12q0-1-.363-1.912T15.55 8.45q-.7-.7-1.612-1.062t-1.888-.363l.45-.45q.2-.225.2-.525t-.225-.525t-.525-.225t-.525.225l-1.6 1.6q-.3.3-.3.7t.3.7l1.6 1.6q.225.225.525.225t.525-.225t.225-.525t-.225-.525zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"
+                      /></svg
+                  ></span>
+                </a>
+                <div class="">
+                  <a class="btn" href="#">로그인</a>
+                  <a class="btn" href="#">회원가입</a>
+                </div>
+              </div>
+            </div>
+          </header>
+          <div class="sitemap-contents">
+            <form class="search-form">
+              <div class="search-wrap">
+                <input
+                  type="search"
+                  id="site-map-search"
+                  name="search"
+                  placeholder=""
+                  aria-label="사이트맵 검색"
+                />
+                <button class="clear-btn" type="button" aria-label="삭제">
+                  <span class="screen-hidden">삭제</span>
+                </button>
+              </div>
+              <button type="button" class="search-btn">검색</button>
+            </form>
+            <nav class="gnb">
+              <ul class="gnb-depth1-wrap">
+                <li class="gnb-depth1"><a href="#">전시예약</a></li>
+                <li class="gnb-depth1"><a href="#">셔틀버스예약</a></li>
+                <li class="gnb-depth1"><a href="#">온라인스토어</a></li>
+              </ul>
+              <ul class="gnb-depth1-wrap second">
+                <li class="gnb-depth1"><a href="#">방문안내</a></li>
+                <li class="gnb-depth1">
+                  <a href="#">전시</a>
+                  <ul class="gnb-depth2-wrap">
+                    <li class="gnb-depth2">
+                      <a href="#">현재전시</a>
+                    </li>
+                    <li class="gnb-depth2">
+                      <a href="#">예정전시</a>
+                    </li>
+                    <li class="gnb-depth2">
+                      <a href="#">과거전시</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="gnb-depth1">
+                  <a href="#">소장품</a>
+                  <ul class="gnb-depth2-wrap">
+                    <li class="gnb-depth2">
+                      <a href="#">고미술</a>
+                    </li>
+                    <li class="gnb-depth2">
+                      <a href="#">현대미술</a>
+                    </li>
+                    <li class="gnb-depth2">
+                      <a href="#">보존</a>
+                    </li>
+                    <li class="gnb-depth2">
+                      <a href="#">수어해설</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="gnb-depth1">
+                  <a href="#">배움·연구</a>
+                  <ul class="gnb-depth2-wrap">
+                    <li class="gnb-depth2">
+                      <a href="#">프로그램</a>
+                    </li>
+                    <li class="gnb-depth2">
+                      <a href="#">아카이브</a>
+                    </li>
+                    <li class="gnb-depth2">
+                      <a href="#">출판</a>
+                    </li>
+                    <li class="gnb-depth2">
+                      <a href="#">영상·자료</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="gnb-depth1">
+                  <a href="#">멤버십</a>
+                  <ul class="gnb-depth2-wrap">
+                    <li class="gnb-depth2">
+                      <a href="#">가입과안내</a>
+                    </li>
+                    <li class="gnb-depth2">
+                      <a href="#">프로그램과 혜택</a>
+                    </li>
+                    <li class="gnb-depth2">
+                      <a href="#">뉴스레터</a>
+                    </li>
+                    <li class="gnb-depth2">
+                      <a href="#">멤버십 공지</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="gnb-depth1-wrap">
+                <li class="gnb-depth1"><a href="#">미술관소개</a></li>
+                <li class="gnb-depth1"><a href="#">공지</a></li>
+                <li class="gnb-depth1"><a href="#">보도자료</a></li>
+              </ul>
+            </nav>
+            <ul class="mobile-user">
+              <li>
+                <a class="btn" href="#"
+                  >ENG
+                  <span class="icon"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="#57575c"
+                        d="M12.075 15.475q-.725.025-1.387-.237t-1.163-.763t-.763-1.125t-.262-1.325q0-.25.025-.487t.1-.463q.1-.3-.012-.6t-.388-.425q-.3-.125-.587 0t-.388.425q-.125.375-.187.75T7 12q0 1 .388 1.913t1.087 1.612q.675.7 1.588 1.075t1.887.4l-.425.425q-.225.225-.225.525t.225.525t.525.225t.525-.225l1.6-1.6q.3-.3.3-.7t-.3-.7l-1.6-1.6q-.225-.225-.525-.225t-.525.225t-.225.525t.225.525zM11.9 8.5q.725 0 1.4.263t1.175.762t.763 1.125t.262 1.325q0 .25-.025.487t-.1.463q-.1.3.013.612t.387.438q.3.125.588 0t.387-.425q.125-.375.188-.763T17 12q0-1-.363-1.912T15.55 8.45q-.7-.7-1.612-1.062t-1.888-.363l.45-.45q.2-.225.2-.525t-.225-.525t-.525-.225t-.525.225l-1.6 1.6q-.3.3-.3.7t.3.7l1.6 1.6q.225.225.525.225t.525-.225t.225-.525t-.225-.525zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"
+                      /></svg
+                  ></span>
+                </a>
+              </li>
+              <li><a class="btn" href="#">로그인</a></li>
+              <li><a class="btn" href="#">회원가입</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- script -->
+    <script>
+      //헤더 색상변경
+      const header = document.querySelector(".header");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 0) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+
+      // 옵션설정
+      const settingToggleBtn = document.getElementById("settingToggleBtn");
+      const settingOverlay = document.querySelector(".ui-setting-overlay");
+      // 사이트맵
+      const menuToggleBtn = document.querySelector(".menu-btn");
+      const sitemapOverlay = document.querySelector(".sitemap-overlay");
+      const sitemapInner = document.querySelector(".sitemap");
+      let isSitemapOpen = false;
+
+      //세팅옵션오버레이 닫기
+      function closeSettingOverlay() {
+        settingOverlay.classList.remove("open");
+        settingOverlay.setAttribute("aria-hidden", "true");
+        settingToggleBtn.classList.remove("active");
+      }
+
+      settingToggleBtn.addEventListener("click", () => {
+        const isNowOpen = settingOverlay.classList.toggle("open");
+        settingToggleBtn.classList.toggle("active");
+        settingOverlay.setAttribute("aria-hidden", String(!isNowOpen));
+      });
+
+      settingOverlay.addEventListener("click", (e) => {
+        if (e.target === settingOverlay) {
+          settingToggleBtn.classList.remove("active");
+          settingOverlay.classList.remove("open");
+        }
+      });
+
+      menuToggleBtn.addEventListener("click", () => {
+        if (!isSitemapOpen) {
+          sitemapOverlay.classList.add("open");
+          sitemapOverlay.setAttribute("aria-hidden", "false");
+          menuToggleBtn.classList.add("active");
+          isSitemapOpen = true;
+        } else {
+          sitemapOverlay.classList.remove("open");
+          sitemapOverlay.setAttribute("aria-hidden", "true");
+          menuToggleBtn.classList.remove("active");
+          isSitemapOpen = false;
+        }
+        closeSettingOverlay();
+      });
+
+      //메인화면 스와이퍼
+      const collectionSwiper = new Swiper(".collection-swiper", {
+        loop: true,
+        slidesPerView: 2,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 4, // 태블릿 이상
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

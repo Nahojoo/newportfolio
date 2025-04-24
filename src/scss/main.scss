@@ -1,0 +1,576 @@
+// 색상 변수
+$black: #1c1c1e;
+$white: #ffffff;
+$primary: #5478f8;
+$grey-1: #dfdfdf;
+$grey-2: #8a8a8a;
+$grey-3: #666262;
+$grey-4: #393838;
+$fontColor: #2c2b2b;
+$bgColor: #f5f5f5;
+
+// 폰트 반응형
+$font-xxl: clamp(2rem, 3vw, 3.5rem);
+$font-xl: clamp(2rem, 2vw, 2rem);
+$font-lg: clamp(1.5rem, 2vw, 1.5rem);
+$font-md: clamp(1.125rem, 1.5vw, 1.25rem);
+$font-sm: clamp(0.875rem, 1.5vw, 1rem);
+$font-xs: clamp(0.75rem, 1.2vw, 0.9375rem);
+
+// 여백 반응형
+$space-xl: clamp(3rem, 9vw, 12rem);
+$space-lg: clamp(1.5rem, 5vw, 6rem);
+$space-md: clamp(1rem, 4vw, 3rem);
+$space-sm: clamp(0.75rem, 2vw, 2rem);
+$space-xs: clamp(0.5rem, 1vw, 1rem);
+
+// 넓이
+$max-width: 960px;
+$min-width: 320px;
+$mobile480: 480px;
+$mobile768: 768px;
+
+//이미지 경로
+$imgpath: "/portfolio/src/assets/";
+
+:root {
+  --black: #{$black};
+  --white: #{$white};
+  --primary: #{$primary};
+  --grey-1: #{$grey-1};
+  --grey-2: #{$grey-2};
+  --grey-3: #{$grey-3};
+  --grey-4: #{$grey-4};
+  --bgColor: #{$bgColor};
+  --fontColor: #{$fontColor};
+  //
+  --font-xxl: #{$font-xxl};
+  --font-xl: #{$font-xl};
+  --font-lg: #{$font-lg};
+  --font-md: #{$font-md};
+  --font-sm: #{$font-sm};
+  --font-xs: #{$font-xs};
+  //
+  --space-xs: #{$space-xs};
+  --space-sm: #{$space-sm};
+  --space-md: #{$space-md};
+  --space-lg: #{$space-lg};
+  --space-xl: #{$space-xl};
+}
+
+//mixin
+// 반응형
+@mixin respond($size) {
+  @media screen and (max-width: $size) {
+    @content;
+  }
+}
+//고정 레이아웃
+@mixin max-width {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+// 카드 스타일링
+@mixin card-style($card) {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bgColor);
+  padding: 1.5rem;
+
+  .#{$card}-item__title {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  .#{$card}-item__date {
+    display: block;
+    color: var(--grey-2);
+    font-size: var(--font-xs);
+  }
+  .#{$card}-item__badge {
+    display: block;
+    font-size: var(--font-xs);
+    font-weight: 600;
+    color: var(--grey-3);
+    padding-bottom: 0.5rem;
+  }
+  .#{$card}-item__desc {
+    line-height: 1.9;
+    word-break: keep-all;
+  }
+  .#{$card}-item__icon {
+    display: inline-block;
+    width: 2.625rem;
+    height: 2.625rem;
+    padding: 0.375rem;
+    border-radius: 0.24rem;
+    margin-right: 0.375rem;
+    transition: all 0.1s ease;
+    > img {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+    &:hover {
+      background-color: var(--grey-2);
+    }
+  }
+}
+// 말풍선 스타일
+@mixin bubble-style($border-size) {
+  padding: 0.75rem 1.25rem;
+  font-size: var(--font-lg);
+  background-color: var(--grey-3);
+  color: var(--white);
+  border-radius: $border-size;
+}
+// 블러 효과
+@mixin shadow($spread) {
+  box-shadow: 0px 0px 6px $spread rgba(#cce0ff, 0.2);
+}
+
+html,
+body {
+  font-size: var(--font-sm);
+  font-family: "roboto", sans-serif;
+  color: var(--fontColor);
+  min-width: $min-width;
+  line-height: 1.6;
+}
+a {
+  color: var(--fontColor);
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+button {
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+}
+h2 {
+  font-size: var(--font-xl);
+  font-weight: 700;
+  line-height: 1.2;
+}
+h3 {
+  font-size: var(--font-md);
+  font-weight: 500;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.primary-btn {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  font-weight: 700;
+  width: fit-content;
+  border-radius: 2rem;
+}
+
+// 헤더 (header)
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  height: 80px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.4s ease;
+  .logo {
+    font-size: var(--font-lg);
+    font-weight: 700;
+  }
+  nav {
+    display: flex;
+    gap: 1rem;
+  }
+  &.scrolled {
+    height: 40px;
+  }
+}
+// 본문
+// 인트로 (intro)
+.intro-section {
+  flex-direction: column;
+  min-height: 100vh;
+  &__title {
+    font-size: var(--font-xxl);
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  &__typing {
+    display: inline-flex;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    transition: width 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
+    &::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 10px;
+      right: 0px;
+      bottom: 10px;
+      border-right: 2px solid var(--black);
+      animation: cursor 0.6s steps(1) infinite;
+    }
+  }
+  @keyframes cursor {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  //깃허브 바로가기
+  .btn-github {
+    border: 0.5px solid var(--grey-1);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    transform: translate(0, 0);
+    font-weight: 500;
+    animation: shadow 1s ease infinite;
+    @keyframes shadow {
+      0% {
+        @include shadow(0px);
+      }
+      100% {
+        @include shadow(16px);
+      }
+    }
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 1.125rem;
+      height: 1.125rem;
+      background: url($imgpath + "icons/ico_arrow_right.png") no-repeat center
+        center / auto 1.125rem;
+      transform: rotate(-45deg);
+    }
+  }
+  .btn-github:hover::after {
+    transform: rotate(-45deg) translate(2px, -2px);
+    transition: all 0.2s ease;
+  }
+  // 스크롤 다운
+  .btn-scrolldown {
+    position: fixed;
+    bottom: 32px;
+    left: 50%;
+    margin-left: -32px;
+    z-index: 99;
+    width: 64px;
+    height: 64px;
+    border: 1px solid var(--black);
+    cursor: default;
+    background-color: var(--white);
+    transition: opacity 0.3s ease;
+    opacity: 1;
+    &.hidden {
+      opacity: 0;
+    }
+  }
+}
+
+//프로필 (profile)
+.profile-section {
+  @include max-width;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    padding-bottom: 2rem;
+    @include respond(500px) {
+      display: block;
+    }
+  }
+  //오른쪽 콘텐츠
+  &__content {
+    width: 70%;
+    padding-top: 1rem;
+    @include respond(500px) {
+      width: 100%;
+    }
+  }
+  h3 {
+    display: inline-block;
+    padding: 0.5rem 1rem 0 1rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+    background-color: var(--bgColor);
+  }
+  &__block {
+    padding-top: 1rem;
+  }
+  &__block:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  .about {
+    @include card-style("about");
+    > li:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+    &-item__title > span {
+      display: block;
+      line-height: 2;
+    }
+  }
+
+  //왼쪽 사이드바
+  &__side {
+    width: 30%;
+    //background-color: #c5dcff;
+    @include respond(500px) {
+      display: none;
+    }
+  }
+
+  .side-list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    //background-color: #fff7bb;
+  }
+  .side-item {
+    display: inline-block;
+    width: fit-content;
+    padding: 0.75rem 0;
+    //background-color: forestgreen;
+    position: relative;
+    z-index: 1;
+    &.active {
+      font-weight: 700;
+    }
+    &::before {
+      content: "";
+      width: 100%;
+      height: 1rem;
+      background: rgba(#5478f8, 0.3); // 예시: 반투명 검은색
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      z-index: -1;
+    }
+    &.active {
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+// 프로젝트 (projects)
+.projects-section {
+  @include max-width;
+  &__inner {
+    position: relative;
+    margin: var(--space-xl) 0;
+  }
+  &__title {
+    padding-bottom: 3rem;
+  }
+  .primary-btn {
+    margin: 0.75rem 0;
+    &:hover,
+    &:focus {
+      box-shadow: inset 10rem 0 0 0 var(--primary);
+      color: $white;
+    }
+  }
+  .swiper {
+    width: 100%;
+  }
+  .swiper-wrapper {
+    padding: 1rem 0;
+  }
+  .project {
+    @include card-style("project");
+    &-item__desc {
+      padding: 0.5rem 0 0 1rem;
+      list-style-type: disc;
+      font-weight: 400;
+      > li {
+        padding-bottom: 0.25rem;
+        color: var(--grey-4);
+      }
+    }
+  }
+  .swiper-scrollbar.projects-scrollbar {
+    top: 0px;
+    .swiper-scrollbar-drag {
+      background-color: var(--primary);
+    }
+  }
+  // prev/next 버튼
+  .projects-btns {
+    position: absolute;
+    top: 20px;
+    left: auto;
+    right: 0px;
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+    background-color: var(--white);
+    border: 1px solid var(--black);
+  }
+  .projects-btns.swiper-button-prev {
+    right: 48px;
+  }
+  .projects-btns.swiper-button-next,
+  .projects-btns.swiper-button-prev {
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 2rem;
+      height: 2rem;
+      position: absolute;
+      bottom: calc(50% - 1rem);
+      left: calc(50% - 1rem);
+      background: url($imgpath + "icons/ico_arrow_right.png") no-repeat center
+        center / auto 2rem;
+    }
+  }
+  .projects-btns.swiper-button-prev {
+    &::after {
+      rotate: 180deg;
+    }
+  }
+
+  // img 호버
+  .hover-img {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.95);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    position: absolute;
+    width: 40%;
+    height: auto;
+    pointer-events: none;
+    z-index: 100;
+  }
+  .hover-img.active {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+}
+
+// 연락 (contact)
+.contact-section {
+  @include max-width;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    padding: 2.5rem;
+    background-color: var(--grey-4);
+  }
+  &__loader {
+    width: fit-content;
+    @include bubble-style(5rem 5rem 5rem 0);
+  }
+  .loader {
+    width: 70px;
+    aspect-ratio: 2;
+    --_g: no-repeat
+      radial-gradient(circle closest-side, var(--bgColor) 90%, transparent);
+    background: var(--_g) 0% 50%, var(--_g) 50% 50%, var(--_g) 100% 50%;
+    background-size: 33.33% 33.33%;
+    animation: load 1.5s infinite linear;
+  }
+  @keyframes load {
+    20% {
+      background-position: 0% 0%, 50% 50%, 100% 50%;
+    }
+    40% {
+      background-position: 0% 100%, 50% 0%, 100% 50%;
+    }
+    60% {
+      background-position: 0% 50%, 50% 100%, 100% 0%;
+    }
+    80% {
+      background-position: 0% 50%, 50% 50%, 100% 100%;
+    }
+  }
+  &__desc {
+    margin-top: 1rem;
+    color: var(--white);
+    opacity: 0.8;
+  }
+  &__mail {
+    width: fit-content;
+    margin-top: 1.5rem;
+    text-align: end;
+    margin-left: auto;
+    position: relative;
+    a {
+      @include bubble-style(5rem 5rem 0 5rem);
+    }
+  }
+  .custom-cursor {
+    display: none;
+    text-align: center;
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    pointer-events: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.3);
+    color: var(--white);
+    line-height: 1.2;
+    transform: translate(10px, 10px);
+    transition: all 0.2s ease;
+    z-index: 20;
+  }
+}
+
+// 최상단 이동
+.top-btn {
+  cursor: pointer;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 0.5rem;
+  z-index: 99;
+  border: 1px solid var(--black);
+  background-color: var(--white);
+  svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+// 푸터 (footer)
+footer {
+  padding: 6rem 0 3.5rem;
+  p {
+    font-size: var(--font-xs);
+    color: var(--grey-3);
+    text-align: center;
+    line-height: 2;
+    font-weight: 500;
+  }
+}

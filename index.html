@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nahojoo.github.io/portfolio/" />
+    <meta property="og:title" content="포트폴리오" />
+    <meta property="og:description" content="나호주 Portfolio 입니다." />
+    <meta property="og:image" content="" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <link rel="shortcut icon" href="/portfolio/src/assets/icons/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- HEADER -->
+      <header class="header">
+        <h1 class="logo">portfolio</h1>
+        <nav class="nav">
+          <a href="#profile">Profile</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">contact</a>
+        </nav>
+      </header>
+      <!-- CONTAINER -->
+      <div id="container">
+        <!-- INTRO -->
+        <section class="intro-section flex-center">
+          <h2 class="intro-section__title">
+            안녕하세요 </br>
+            <span class="intro-section__typing"></span>
+          </br>나호주입니다.
+          </h2>
+          <a
+            href="https://github.com/Nahojoo"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-github"
+            >github 바로가기</a
+          >
+          <button class="btn-scrolldown">scroll down</button>
+        </section>
+        <!-- PROFILE -->
+        <section id="profile" class="profile-section">
+          <h2>PROFILE</h2>
+          <div class="profile-section__inner">
+            <aside class="profile-section__side">
+              <ul class="side-list">
+                <li class="side-item active">About Me</li>
+                <li class="side-item">Core Value</li>
+                <li class="side-item">Skills</li>
+                <li class="side-item">Education</li>
+                <li class="side-item">Certificate</li>
+              </ul>
+            </aside>
+            <div class="profile-section__content">
+              <div class="profile-section__block">
+                <h3>About Me</h3>
+                <div class="about">
+                    <p class="about-item__desc">
+                      서비스 흐름을 이해하고, 이를 시각적 결과물로 완성하는 웹퍼블리셔를 지향합니다. <br/> 서비스 기획 및 UI/UX
+                      디자인 경험을 바탕으로 디자인 의도를 반영하여 화면에 구현할 수 있는 역량을 갖추고 있습니다. 개발자와의 원활한 협업은 물론, 퍼블리싱 작업의 효율을 높이기 위해 자바스크립트 기술을 꾸준히 학습 중입니다.
+                      <br/>
+                      기술과 소통 모두에 강한 퍼블리셔로, 서비스 완성도를 높이는 데 기여하고 싶습니다.
+                    </p>
+                </div>
+              </div>
+              <div class="profile-section__block">
+                <h3>Core Value</h3>
+                <div class="about">
+                    <h4 class="about-item__title">
+                      <span>HTML5/CSS3 기반의 웹 표준 마크업 및 반응형 스타일링</span>
+                      <span>애플리케이션 개발 프로젝트에서 웹 퍼블리싱 실무 경험</span>
+                    </h4>
+                    <ul class="about-item__desc">
+                      <li>1. Vue3, Vuetify, Quasar 환경에서의 작업 경험</li>
+                      <li>2. Git 협업 툴을 사용한 팀 프로젝트 참여</li>
+                      <li>3. 웹/앱 서비스 기획 경험</li>
+                      <li>4. 피그마를 이용한 UI/UX 디자인 제작</li>
+                    </ul>
+                  </div>
+              </div>
+              <div class="profile-section__block">
+                <h3>Skills</h3>
+                <ul class="about">
+                  <li>
+                    <h4 class="about-item__badge">웹퍼블리싱</h4>
+                    <span class="about-item__icon">
+                      <img
+                      src="./src/assets/icons/ico_html.svg"
+                      alt=""
+                    />
+                    </span>
+                    <span class="about-item__icon">
+                      <img 
+                      src="./src/assets/icons/ico_css.png"
+                      alt="css 아이콘"
+                    /></span>
+                    <span class="about-item__icon"><img
+                      src="./src/assets/icons/ico_sass.svg"
+                      alt="sass 아이콘"
+                    /></span>
+                    <span class="about-item__icon"><img
+                      src="./src/assets/icons/ico_js.svg"
+                      alt="자바스크립트 아이콘"
+                    /></span>
+                  </li>
+                  <li>
+                    <h4 class="about-item__badge">디자인</h4>
+                    <span class="about-item__icon"><img
+                      src="./src/assets/icons/ico_figma.svg"
+                      alt="피그마 아이콘"
+                    /></span>
+                    <span class="about-item__icon"><img
+                      src="./src/assets/icons/ico_ill.svg"
+                      alt="일러스트 아이콘"
+                    /></span>
+                    <span class="about-item__icon"><img 
+                      src="./src/assets/icons/ico_psd.png"
+                      alt="포토샵 아이콘"
+                    /></span>
+                    
+                  </li>
+                </div>
+              </ul>
+              <div class="profile-section__block">
+                <h3>Education</h3>
+                <div class="about">
+                    | UI/UX 웹 디자인&웹퍼블리셔 교육 수료
+                    <span class="about-item__date">2022.03~08</span>
+                </div>
+              </div>
+              <div class="profile-section__block">
+                <h3>Certificate</h3>
+                <ul class="about">
+                  <li>
+                    | 웹디자인기능사
+                    <span class="about-item__date">2022. 09 </span>
+                  </li>
+                  <li>
+                    | 컴퓨터활용능력 1급
+                    <span class="about-item__date">2021. 10 </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- PEOJECTS -->
+        <section id="projects" class="projects-section">
+          <div class="projects-section__inner">
+            <h2 class="projects-section__title">Projects</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide" data-img="./src/assets/imgs/portfolio1.png">
+                  <div class="project">
+                    <h3 class="project-item__title">
+                      <span class="project-item__badge">개인</span>포트폴리오
+                      리뉴얼
+                    </h3>
+                    <span class="project-item__date">2025.03~04</span>
+                    <a href="#" class="primary-btn">깃헙 바로가기</a>
+                    <ul class="project-item__desc">
+                      <li>
+                        GSAP 라이브러리와 같은 새로운 기술을 적용하여 포트폴리오 리뉴얼 작업 진행
+                      </li>
+                      <li>
+                        사용 기술: HTML5, SCSS, JavaScript, Swiper 및 GSAP ScrollTrigger
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide" data-img="./src/assets/imgs/portfolio2.png">
+                  <div class="project">
+                    <h3 class="project-item__title">
+                      <span class="project-item__badge">개인</span>리움미술관 클론코딩
+                    </h3>
+                    <span class="project-item__date">2025.04</span>
+                    <a href="projects.html" class="primary-btn">바로 보기</a>
+                    <ul class="project-item__desc">
+                      <li>
+                        웹퍼블리싱의 실무 역량 강화 목적으로 실제 웹사이트 클론 코딩 진행
+                      </li>
+                      <li>
+                        포인트 : 헤더 및 모달 동적요소 추가, 모바일 반응형 및 SCSS mixin을 사용한 스타일링 적용
+                      </li>
+                      <li>
+                        사용 기술: HTML5, SCSS, JavaScript, Swiper 
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide" data-img="">
+                  <div class="project">
+                    <h3 class="project-item__title">
+                      <span class="project-item__badge">개인</span>프로젝트
+                    </h3>
+                    <span class="project-item__date">2025.04~</span>
+                    <ul class="project-item__desc">
+                      <li>진행중입니다.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- scrollbar -->
+              <div class="swiper-scrollbar projects-scrollbar"></div>
+            </div>
+            <!-- prev,next button -->
+            <div class="swiper-button-next projects-btns"></div>
+            <div class="swiper-button-prev projects-btns"></div>
+          </div>
+        </section>
+        <!-- CONTACT -->
+        <section id="contact" class="contact-section">
+          <div class="contact-section__inner">
+            <div class="contact-section__loader">
+              <div class="loader"></div>
+            </div>
+            <p class="contact-section__desc">
+              좋은 팀에서, 함께 고민하고 성장하는 동료가 되고 싶습니다.
+            </p>
+            <div class="contact-section__mail custom-cursor-area">
+              <a href="mailto:ghwn0806@naver.com">ghwn0806@naver.com</a>
+              <div class="custom-cursor flex-center">Click!</div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- TOP-BUTTON -->
+      <button class="top-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            d="M13 20h-2V8l-5.5 5.5l-1.42-1.42L12 4.16l7.92 7.92l-1.42 1.42L13 8z"
+          />
+        </svg>
+      </button>
+      <!-- FOOTER -->
+      <footer class="flex-center">
+        <p>&copy; 2025 <br />All Rights Reserved.</p>
+      </footer>
+    </div>
+    <!-- cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- script -->
+    <script type="module" src="./src/index.js"></script>
+  </body>
+</html>
