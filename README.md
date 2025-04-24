@@ -5,7 +5,7 @@
 
 ## 🔗 데모 보기
 
-👉 [프로젝트 바로가기](https://github.com/Nahojoo/newportfolio)
+👉 [프로젝트 바로가기](https://nahojoo.github.io/newportfolio/)
 
 
 ## 🛠 사용 기술
